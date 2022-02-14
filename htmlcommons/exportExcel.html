@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,29 +39,29 @@
         function myFunction()
         {
             $("#button1").prop('value', 'Query Executing...');
-            document.getElementById('passedparms').innerHTML = window.results;
+            //document.getElementById('passedparms').innerHTML = window.results.resultName;
             //var industry_name = window.results.parameters[2]["value"] ;
             //var line_of_business = window.results.parameters[1]["value"] ;
-            var date_month = '2013DEC';//window.results.parameters[0]["value"] ;
+            var date_month = window.results.parameters[0]["value"] ;
+			console.log(date_month);
             $.ajax({
             type: "GET",
-            url: "/SASJobExecution/?_program=/Users/sasdemo/My%20Folder/Ajay/ExportExcel",
-            data: {dateMonth: date_month, _action: "execute", _output_type: "json"},
+            url: "/SASJobExecution/?_program=/Users/sasdemo/My Folder/Ajay/ExportExcel",
+            data: {date_month: date_month, _action: "execute", _output_type: "xlsx"},
             async: false,
                 beforeSend: function (xhr) {
                     if (xhr && xhr.overrideMimeType) {
-                    xhr.overrideMimeType('application/json;charset=utf-8');
+                    xhr.overrideMimeType('application/blob;charset=utf-8');
                 }
             },
-            dataType: 'json',
-            success: function (json) {
-            //Do stuff with the JSON data
-            
-            console.log(json);
-            document.getElementById('test').innerHTML = json[0].result;
-                
-            }
-        });
+            dataType: 'blob',
+            success: function (data) {
+            document.getElementById('test').innerHTML = $('p').append('Job Success');
+			},
+			error: function (jqXhr, textStatus, errorMessage) {
+            document.getElementById('test').innerHTML = $('p').append('Error' + errorMessage);
+			}        
+			});
         $("#button1").prop('value', 'Download Excel');
         }
         
@@ -69,7 +70,7 @@
   <body>
        
     <button id = 'button1' class = "button" onclick="myFunction()">Download Excel</button><br><br>
-    <div id= "test" style="color:white;  font-family: Avenir Next;" />
-    <div id= "passedparms" style="color:greenyellow;  font-family: Avenir Next;" />
+    <div id= "test" style="color:greenyellow;  font-family: Avenir Next;" />
+    <p><div id= "passedparms" style="color:greenyellow;  font-family: Avenir Next;" /></p>
   
 </body></html>
