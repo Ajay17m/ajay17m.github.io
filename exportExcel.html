@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../htmlcommons/util/messagingUtil.js"></script>
+    <style>
+    
+    .button {
+    background-color: #011E33;
+  border: 5;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    </style>
+     <script type="text/javascript">
+        "use strict";
+
+        var results;
+        va.messagingUtil.setOnDataReceivedCallback(onDataReceived);
+        
+        // Retrieve data and begin processing
+        function onDataReceived(resultData)
+        {
+        
+        document.getElementById('test').innerHTML = "";
+        
+        window.results = resultData;
+        }
+        
+        function myFunction()
+        {
+            $("#button1").prop('value', 'Query Executing...');
+            //var industry_name = window.results.parameters[2]["value"] ;
+            //var line_of_business = window.results.parameters[1]["value"] ;
+            var date_month = window.results.parameters[0]["value"] ;
+            
+            $.ajax({
+            type: "GET",
+            url: "/SASJobExecution/?_program=/Users/sasdemo/My%20Folder/Ajay/ExportExcel",
+            data: {dateMonth: date_month, _action: "execute", _output_type: "json"},
+            async: false,
+                beforeSend: function (xhr) {
+                    if (xhr && xhr.overrideMimeType) {
+                    xhr.overrideMimeType('application/json;charset=utf-8');
+                }
+            },
+            dataType: 'json',
+            success: function (json) {
+            //Do stuff with the JSON data
+            
+            console.log(json);
+            document.getElementById('test').innerHTML = json[0].result;
+                
+            }
+        });
+        document.getElementById('passedparms').innerHTML = window.results.parameters;
+        $("#button1").prop('value', 'Download Excel');
+        }
+        
+     </script>
+  </head>
+  <body>
+       
+    <button id = 'button1' class = "button" onclick="myFunction()">Download Excel</button><br><br>
+    <div id= "test" style="color:white;  font-family: Avenir Next;" />
+    <div id= "passedparms" style="color:greenyellow;  font-family: Avenir Next;" />
+  
+</body></html>
