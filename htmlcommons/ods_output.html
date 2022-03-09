@@ -50,7 +50,6 @@
 		+"&output_type=ods_html5"
 		+"&vajson="+encodeURIComponent(stringifiedJSON)
 		//+"&_debug=log";		
-	}
 	return $.ajax({
 		method:"GET",
 		url:"/SASJobExecution/"+paramStr,
@@ -65,6 +64,8 @@
 		 console.log("textStatus:",textStatus);
 		 console.log("errorThrown:",errorThrown);
 		})
+	}
+    
 	va.messagingUtil.setOnDataReceivedCallback(onDataReceived);
 	
 </script>
