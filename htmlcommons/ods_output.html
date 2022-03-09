@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>VA Output</title>
+    <script type="text/javascript" src="../util/messagingUtil.js"></script>
+    <style>
+        text {
+            font-size: 9pt;
+        }
+        svg {
+            display: block;
+        }
+        html, body, #chart_div, svg ,#JobResults{
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+			font: 10px sans-serif;
+        }
+		#JobResults{
+			position: relative;
+			font-family: "Albany AMT";
+			font-size: 10pt;
+		}
+    </style>
+<script>
+    "use strict";
+	window.$=window.parent.$;
+    function onDataReceived(resultData)
+    {
+	  if(resultData) {
+		_resultName = resultData.resultName;
+		if(resultData.columns.lenght== 0){
+		    // it needs at least one column and one row
+			document.getElementbyId("JobResults").innerHtML="";
+			va.messagingUtil.postInstructionalMessage(resultName,"Please, assing roles");
+			return;
+		}
+		document.getElementbyId("JobResults").innerHtML="Waiting for job to finish";
+		callJob(resultData)
+			.done(function(odsOuput){
+				document.getElementbyId("JobResults").innerHtML=odsOutput;})
+			.fail(function(jqXHR, textStatus, errorThrown){
+				document.getElementbyId("JobResults").innerHtML="Job finished with Error(see console Logs";})
+		}
+	}
+	function callJob(resultData){
+		var stringifiedJSON = JSON.stringify(resultData);
+		var paramStr="?_program" + encodeURIComponent("/Public/CSAJP/CalculateCorrelation")
+		+"&_action=execute"
+		+"&output_type=ods_html5"
+		+"&vajson="+encodeURIComponent(stringifiedJSON)
+		//+"&_debug=log";		
+	}
+	return $.ajax({
+		method:"GET",
+		url:"/SASJobExecution/"+paramStr,
+		headers: {"Accept":'text/html'}
+		})
+		.done(function(jobOutput){
+		 console.log("Job executed with success");
+		})
+		.fail(function(jqXHR, textStatus, errorThrown){
+		 console.log("***********Job Error***************");
+		 console.log("jqXHR",jqXHR);
+		 console.log("textStatus:",textStatus);
+		 console.log("errorThrown:",errorThrown);
+		})
+	va.messagingUtil.setOnDataReceivedCallback(onDataReceived);
+	
+</script>
+</head>
+<body>
+<div id="chart_div"/>
+</body>
+</html>
