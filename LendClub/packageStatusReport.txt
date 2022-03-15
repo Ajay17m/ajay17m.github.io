@@ -1,0 +1,85 @@
+Button bar - Bad Loans 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Text input - Variable name 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Key value - Number of observations 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Key value - Frequency 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+List table - Variable name 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+    * The set of possible values for parameter "Categorical Cut off" could not be derived. Parameters must be bound to data.
+    * The set of possible values for parameter "Missing Cuttoff" could not be derived. Parameters must be bound to data.
+
+Key value - High Missing 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+    * The set of possible values for parameter "Missing Cuttoff" could not be derived. Parameters must be bound to data.
+
+Key value - High Cardinality 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+    * The set of possible values for parameter "Categorical Cut off" could not be derived. Parameters must be bound to data.
+    * The set of possible values for parameter "Missing Cuttoff" could not be derived. Parameters must be bound to data.
+
+Bar - Type 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Key value - Ignored Variables 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+    * The set of possible values for parameter "Categorical Cut off" could not be derived. Parameters must be bound to data.
+    * The set of possible values for parameter "Missing Cuttoff" could not be derived. Parameters must be bound to data.
+
+Bar - Selected Vars 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+    * The set of possible values for parameter "Categorical Cut off" could not be derived. Parameters must be bound to data.
+    * The set of possible values for parameter "Missing Cuttoff" could not be derived. Parameters must be bound to data.
+
+Dual axis bar-line - initial_list_status 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - Home Owner 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - Grade Raiting 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+    * Hierarchies that have ranks are not supported.
+
+Dual axis bar-line - pymnt_plan 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - application_type 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - verification_status 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - emp_length 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - tenure 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.
+
+Dual axis bar-line - purpose 1
+  Interactivity for this object is limited for the following reasons:
+    * Automatic actions are not supported.

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','Public','LENDINGCLUBDATA','en_US'" tableModifiedTimeStamp="2022-03-14T06:46:38.243Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="id" xref="id"/>
+                <column dataType="double" format="BEST12." label="member_id" xref="member_id"/>
+                <column dataType="double" format="BEST12." label="loan_amnt" xref="loan_amnt"/>
+                <column dataType="double" format="BEST12." label="funded_amnt" xref="funded_amnt"/>
+                <column dataType="double" format="BEST12." label="funded_amnt_inv" xref="funded_amnt_inv"/>
+                <column dataType="string" label="tenure" xref="tenure"/>
+                <column dataType="double" format="BEST12." label="int_rate" xref="int_rate"/>
+                <column dataType="double" format="BEST12." label="installment" xref="installment"/>
+                <column dataType="string" label="grade" xref="grade"/>
+                <column dataType="string" label="sub_grade" xref="sub_grade"/>
+                <column dataType="string" label="emp_title" xref="emp_title"/>
+                <column dataType="string" label="emp_length" xref="emp_length"/>
+                <column dataType="string" label="home_ownership" xref="home_ownership"/>
+                <column dataType="double" format="BEST12." label="annual_inc" xref="annual_inc"/>
+                <column dataType="string" label="verification_status" xref="verification_status"/>
+                <column dataType="string" label="issue_d" xref="issue_d"/>
+                <column dataType="string" label="pymnt_plan" xref="pymnt_plan"/>
+                <column dataType="string" label="desc" xref="desc"/>
+                <column dataType="string" label="purpose" xref="purpose"/>
+                <column dataType="string" label="title" xref="title"/>
+                <column dataType="string" label="zip_code" xref="zip_code"/>
+                <column dataType="string" label="addr_state" xref="addr_state"/>
+                <column dataType="double" format="BEST12." label="dti" xref="dti"/>
+                <column dataType="double" format="BEST12." label="delinq_2yrs" xref="delinq_2yrs"/>
+                <column dataType="string" label="earliest_cr_line" xref="earliest_cr_line"/>
+                <column dataType="double" format="BEST12." label="inq_last_6mths" xref="inq_last_6mths"/>
+                <column dataType="double" format="BEST12." label="mths_since_last_delinq" xref="mths_since_last_delinq"/>
+                <column dataType="string" label="mths_since_last_record" xref="mths_since_last_record"/>
+                <column dataType="double" format="BEST12." label="open_acc" xref="open_acc"/>
+                <column dataType="double" format="BEST12." label="pub_rec" xref="pub_rec"/>
+                <column dataType="double" format="BEST12." label="revol_bal" xref="revol_bal"/>
+                <column dataType="double" format="BEST12." label="revol_util" xref="revol_util"/>
+                <column dataType="double" format="BEST12." label="total_acc" xref="total_acc"/>
+                <column dataType="string" label="initial_list_status" xref="initial_list_status"/>
+                <column dataType="double" format="BEST12." label="out_prncp" xref="out_prncp"/>
+                <column dataType="double" format="BEST12." label="out_prncp_inv" xref="out_prncp_inv"/>
+                <column dataType="double" format="BEST12." label="total_pymnt" xref="total_pymnt"/>
+                <column dataType="double" format="BEST12." label="total_pymnt_inv" xref="total_pymnt_inv"/>
+                <column dataType="double" format="BEST12." label="total_rec_prncp" xref="total_rec_prncp"/>
+                <column dataType="double" format="BEST12." label="total_rec_int" xref="total_rec_int"/>
+                <column dataType="double" format="BEST12." label="total_rec_late_fee" xref="total_rec_late_fee"/>
+                <column dataType="double" format="BEST12." label="recoveries" xref="recoveries"/>
+                <column dataType="double" format="BEST12." label="collection_recovery_fee" xref="collection_recovery_fee"/>
+                <column dataType="string" label="last_pymnt_d" xref="last_pymnt_d"/>
+                <column dataType="double" format="BEST12." label="last_pymnt_amnt" xref="last_pymnt_amnt"/>
+                <column dataType="string" label="next_pymnt_d" xref="next_pymnt_d"/>
+                <column dataType="string" label="last_credit_pull_d" xref="last_credit_pull_d"/>
+                <column dataType="double" format="BEST12." label="collections_12_mths_ex_med" xref="collections_12_mths_ex_med"/>
+                <column dataType="string" label="mths_since_last_major_derog" xref="mths_since_last_major_derog"/>
+                <column dataType="double" format="BEST12." label="policy_code" xref="policy_code"/>
+                <column dataType="string" label="application_type" xref="application_type"/>
+                <column dataType="string" label="annual_inc_joint" xref="annual_inc_joint"/>
+                <column dataType="string" label="dti_joint" xref="dti_joint"/>
+                <column dataType="string" label="verification_status_joint" xref="verification_status_joint"/>
+                <column dataType="double" format="BEST12." label="acc_now_delinq" xref="acc_now_delinq"/>
+                <column dataType="string" label="tot_coll_amt" xref="tot_coll_amt"/>
+                <column dataType="string" label="tot_cur_bal" xref="tot_cur_bal"/>
+                <column dataType="string" label="open_acc_6m" xref="open_acc_6m"/>
+                <column dataType="string" label="open_il_6m" xref="open_il_6m"/>
+                <column dataType="string" label="open_il_12m" xref="open_il_12m"/>
+                <column dataType="string" label="open_il_24m" xref="open_il_24m"/>
+                <column dataType="string" label="mths_since_rcnt_il" xref="mths_since_rcnt_il"/>
+                <column dataType="string" label="total_bal_il" xref="total_bal_il"/>
+                <column dataType="string" label="il_util" xref="il_util"/>
+                <column dataType="string" label="open_rv_12m" xref="open_rv_12m"/>
+                <column dataType="string" label="open_rv_24m" xref="open_rv_24m"/>
+                <column dataType="string" label="max_bal_bc" xref="max_bal_bc"/>
+                <column dataType="string" label="all_util" xref="all_util"/>
+                <column dataType="string" label="total_rev_hi_lim" xref="total_rev_hi_lim"/>
+                <column dataType="string" label="inq_fi" xref="inq_fi"/>
+                <column dataType="string" label="total_cu_tl" xref="total_cu_tl"/>
+                <column dataType="string" label="inq_last_12m" xref="inq_last_12m"/>
+                <column dataType="double" format="BEST12." label="default_ind" xref="default_ind"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds302" resourceIdentifier="'cas-shared-default','CASUSER','LENDCLUB_CARD','en_US'" tableModifiedTimeStamp="2022-03-15T11:42:44.001Z">
+            <columns>
+                <column dataType="string" label="Variable name" xref="_VARNAME_"/>
+                <column dataType="double" format="BEST12." label="Width of the variable formatted value" xref="_FMTWIDTH_"/>
+                <column dataType="string" label="Type of the raw values" xref="_TYPE_"/>
+                <column dataType="string" label="Recommended level for analytics" xref="_RLEVEL_"/>
+                <column dataType="string" label="Variable sort order" xref="_ORDER_"/>
+                <column dataType="string" label="Have more unreported levels" xref="_MORE_"/>
+                <column dataType="double" format="BEST12." label="Number of levels" xref="_CARDINALITY_"/>
+                <column dataType="double" format="BEST12." label="Number of observations" xref="_NOBS_"/>
+                <column dataType="double" format="BEST12." label="Total summation of frequencies" xref="_SUMFREQS_"/>
+                <column dataType="double" format="BEST12." label="Number of missing values" xref="_NMISS_"/>
+                <column dataType="string" label="Format of the missing value" xref="_MISSFMT_"/>
+                <column dataType="double" format="BEST12." label="Percentage of the visible part of the report" xref="_VISIBLE_"/>
+                <column dataType="double" format="BEST12." label="Minimum numeric value" xref="_MIN_"/>
+                <column dataType="double" format="BEST12." label="Maximum numeric value" xref="_MAX_"/>
+                <column dataType="double" format="BEST12." label="Mean" xref="_MEAN_"/>
+                <column dataType="double" format="BEST12." label="Standard deviation" xref="_STDDEV_"/>
+                <column dataType="double" format="BEST12." label="Skewness" xref="_SKEWNESS_"/>
+                <column dataType="double" format="BEST12." label="Kurtosis" xref="_KURTOSIS_"/>
+                <column dataType="double" format="BEST12." label="Maximum frequency" xref="_MFREQ_"/>
+                <column dataType="string" label="Found maximum frequency in the visible part of the report" xref="_MFREQFOUNDLEVEL_"/>
+                <column dataType="double" format="BEST12." label="Numeric level with the maximum frequency" xref="_MFREQNUM_"/>
+                <column dataType="string" label="Character level with the maximum frequency" xref="_MFREQCHR_"/>
+                <column dataType="string" label="Formatted level with the maximum frequency" xref="_MFREQCFMT_"/>
+                <column dataType="double" format="BEST12." label="Last raw numeric value (cutoff)" xref="_LASTNUM_"/>
+                <column dataType="string" label="Last raw character value (cutoff)" xref="_LASTCHR_"/>
+                <column dataType="string" label="Last formatted value (cutoff)" xref="_LASTCFMT_"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>
