@@ -1,7 +1,8 @@
 {
   "name": "viya_app",
   "version": "0.1.0",
-  "homepage": "https://Ajay17m.github.io/viya_app/",
+  "homepage": ".",
+  "proxy": "https://ajay17m.github.io/viya_app/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -46,5 +47,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "your-github-repository-url.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
