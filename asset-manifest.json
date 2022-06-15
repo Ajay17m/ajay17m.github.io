@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/viya_app/static/css/main.fc3b8a5b.css",
-    "main.js": "/viya_app/static/js/main.8c5c48b6.js",
-    "static/js/787.cfdc87b7.chunk.js": "/viya_app/static/js/787.cfdc87b7.chunk.js",
-    "index.html": "/viya_app/index.html",
-    "main.fc3b8a5b.css.map": "/viya_app/static/css/main.fc3b8a5b.css.map",
-    "main.8c5c48b6.js.map": "/viya_app/static/js/main.8c5c48b6.js.map",
-    "787.cfdc87b7.chunk.js.map": "/viya_app/static/js/787.cfdc87b7.chunk.js.map"
+    "main.css": "./static/css/main.0f1478ff.css",
+    "main.js": "./static/js/main.5efef831.js",
+    "static/js/787.cfdc87b7.chunk.js": "./static/js/787.cfdc87b7.chunk.js",
+    "index.html": "./index.html",
+    "main.0f1478ff.css.map": "./static/css/main.0f1478ff.css.map",
+    "main.5efef831.js.map": "./static/js/main.5efef831.js.map",
+    "787.cfdc87b7.chunk.js.map": "./static/js/787.cfdc87b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc3b8a5b.css",
-    "static/js/main.8c5c48b6.js"
+    "static/css/main.0f1478ff.css",
+    "static/js/main.5efef831.js"
   ]
 }
