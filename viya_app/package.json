@@ -1,7 +1,7 @@
 {
   "name": "viya_app",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "./viya_app/",
   "proxy": "https://ajay17m.github.io",
   "private": true,
   "dependencies": {
