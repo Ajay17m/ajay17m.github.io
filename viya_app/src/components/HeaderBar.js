@@ -1,17 +1,19 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Navbar, Nav, Jumbotron } from 'react-bootstrap';
+import { Navbar, Nav, Jumbotron} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 import PAGES from '../data/PAGES';
 
 import { AuthContext } from '../contexts';
+import Report from '../pages/Report';
 
 function HeaderBar() {
     const { authInfo } = useContext(AuthContext);
     const navItems = PAGES.map((item, index) =>
         <Nav.Link to={item.href}
             as={NavLink}
+            style={{ color: 'white', textDecoration: 'none' }}
             key={index} >
             {item.label}
         </Nav.Link>
@@ -24,16 +26,19 @@ function HeaderBar() {
         return (
             <Navbar bg="primary">
                 <Navbar.Collapse>
-
+                    {/* <Nav.Link to='/' as={NavLink}>
+                        <FontAwesomeIcon icon="home" color="white" size="lg" />
+                    </Nav.Link> */}
                     {navItems}
                 </Navbar.Collapse>
-                <span style={{ color: 'white' }}>Welcome {authInfo.user} !</span>
+                <span style={{ color: 'black' }}>Welcome {authInfo.user} !</span>
             </Navbar>
-        );
-    } else {
+        );}
+
+    else {
         return (
-            <Jumbotron style={{ backgroundColor: 'rgb(0, 50, 100)', color: 'white' }}>
-                <h1>Web App - SAS Viya Integration</h1>
+            <Jumbotron style={{ backgroundColor: 'rgb(240,240,240)', color: '240,240,240' }}>
+                <h1>Insurance Analysis</h1>
             </Jumbotron>
         );
     }

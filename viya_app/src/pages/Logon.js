@@ -33,7 +33,7 @@ function Logon() {
         };
 
         const headers = {
-            'Authorization': "Basic " + btoa('viya_app:Orion123'),
+            'Authorization': "Basic " + btoa('viya_app1:Orion123'),
             'Content-Type': 'application/x-www-form-urlencoded'
         };
 

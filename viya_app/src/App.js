@@ -13,6 +13,9 @@ import Cas from './pages/Cas';
 import Compute from './pages/Compute';
 import Jobs from './pages/Jobs';
 import Mas from './pages/Mas';
+import Report from './pages/Report';
+import Report1 from './pages/Report1';
+import Mas1 from './pages/Mas1';
 
 function App() {
   const [authInfo, setAuthInfo] = useState({
@@ -33,7 +36,10 @@ function App() {
             <Route path="/jobs" exact component={Jobs} />
             <Route path="/compute" exact component={Compute} />
             <Route path="/mas" exact component={Mas} />
+            <Route path="/mas1" exact component={Mas1} />
             <Route path="/logon" exact component={Logon} />
+            <Route path="/Report" exact component={Report} />
+            <Route path="/Report1" exact component={Report1} />
           </Switch>
         </Container>
       </Router>

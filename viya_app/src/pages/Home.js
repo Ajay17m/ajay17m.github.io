@@ -1,5 +1,6 @@
 import { Card, Row, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
+import React from 'react';
 
 import PAGES from '../data/PAGES';
 

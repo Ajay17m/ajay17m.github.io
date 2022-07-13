@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import Instance from '../apis/Instance';
@@ -34,7 +35,7 @@ function Jobs() {
     }, [authInfo, setAuthInfo]);
 
     useEffect(() => {
-        if (selection.table !== null) {
+        if (authInfo.csrf.job !== "" && selection.table !== null) {
             const endpoint = "SASJobExecution/";
             const headers = {
                 'X-CSRF-HEADER': 'X-CSRF-TOKEN',
@@ -45,7 +46,7 @@ function Jobs() {
                 reqType: "getdata",
                 lib: selection.library,
                 ds: selection.table
-            };
+            }
             Instance.get(endpoint, { headers: headers, params: params })
                 .then(response => {
                     const rowsData = response.data.rows.map(row => {
@@ -57,6 +58,7 @@ function Jobs() {
                 });
         }
     }, [selection, authInfo.csrf]);
+
 
     const handleSelection = (event) => {
         event.preventDefault();
